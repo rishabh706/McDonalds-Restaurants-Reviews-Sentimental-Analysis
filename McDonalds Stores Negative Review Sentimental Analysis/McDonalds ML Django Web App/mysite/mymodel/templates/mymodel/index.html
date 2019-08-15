@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="{% static 'mymodel/style.css' %}">
+
+    <title>Restaurants Reviews Sentimental Analysis</title>
+    <h1>Restaurants Reviews Sentimental Analysis</h1>
+  </head>
+  <body>
+<form action="{% url 'mymodel:predict' %}" method="POST">
+  {% csrf_token %}
+
+  <div class="container">
+    <div class="form-group">
+      <h2>Enter the Review</h2>
+      <br>
+      <textarea rows="20" cols="80" id='text'name='review' style="font-size:15px" required></textarea>
+    </div>
+
+  </div>
+
+    <select id="button" name='city' required>
+    <option selected disabled value="">Select City</option>
+    <option value="Las Vegas">Las Vegas</option>
+    <option value="Chicago" >Chicago</option>
+    <option value="Los Angeles">Los Angeles</option>
+    <option value="New York">New York</option>
+    <option value="Atlanta">Atlanta</option>
+    <option value="Houston">Houston</option>
+    <option value="Portland">Portland</option>
+    <option value="Dallas">Dallas</option>
+    <option value="Cleveland">Cleveland</option>
+    </select>
+
+<button type="submit" class="button">Predict</button>
+
+</form>
+
+<form action="{% url 'mymodel:predict_upload' %}" method="POST" enctype="multipart/form-data" >
+  {% csrf_token %}
+<input type="file" name="myfile" id="upload" required>
+<button type="submit" class="button" style="transform:translate(500%,-900%)" value="Upload">Submit</button>
+</form>
+
+  </body>
+</html>
