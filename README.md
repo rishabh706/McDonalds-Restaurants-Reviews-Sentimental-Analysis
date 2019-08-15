@@ -17,3 +17,4 @@ The purpose of this machine learning model is to predict the confidence in the p
 
 NOTE:The upload only accepts csv file and while uploading the file the column names should be city and review and there should not be any missing values in both the city as well as review column.
 
+Link to Project : https://rishabh-second-test-app.herokuapp.com
