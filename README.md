@@ -14,6 +14,7 @@ The purpose of this machine learning model is to predict the confidence in the p
 
 [![Capture2.png](https://i.postimg.cc/6ptHHhRx/Capture2.png)](https://postimg.cc/Xp1cqdQs)
 
+[![Capture3.png](https://i.postimg.cc/k560cF7h/Capture3.png)](https://postimg.cc/QBDYN79p)
 
 NOTE:The upload only accepts csv file and while uploading the file the column names should be city and review and there should not be any missing values in both the city as well as review column.
 
