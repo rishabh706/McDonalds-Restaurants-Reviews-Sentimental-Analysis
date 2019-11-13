@@ -6,7 +6,7 @@ The purpose of this machine learning model is to predict the confidence in the p
 2. Trained using RandomForest Regression algorithm.
 3. Used NLTK library for text cleaning and preprocessing.
 4. Achieved Root mean squared error of 0.01,0.03,0.001,0.03,0.01,0.01,0.01 and 0.001 on 8 multiple targets.
-5. Deployed in Production as as Web App using Django and Heroku.
+5. Deployed as Web App using Django and Heroku.
 6. Used Bokeh Library to Analyse the confidence in the violated policies.
 
 [![Capture.png](https://i.postimg.cc/QdGmFJSW/Capture.png)](https://postimg.cc/kBsKZ80n)
